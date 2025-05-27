@@ -1,0 +1,241 @@
+:root {
+
+
+    --main-color: #2B2A29;
+    --secondary-color: #F26522;
+    --header-text-color: white;
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.head{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************** Nav part ************************/
+
+nav {
+    left: 50%;
+    width: 80%;
+    clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+    font-size: 19px;
+    background-color: var(--main-color);
+}
+
+
+nav a ,header .offcanvas-body a  ,footer  a ,.subscribe_container a:hover , .form-control::placeholder{
+    color: var(--header-text-color);
+    transition: .5s ease-out;
+}
+
+nav a:hover ,header .offcanvas-body a:hover  , .crd a.show:hover, .crd a.buy  ,footer  a:hover ,  .subscribe_container a{
+    color: var(--secondary-color);
+
+}
+.crd a.show, .crd a.buy:hover  {
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+/****************************** header part ************************/
+
+header{
+
+    background-image: url("../images/banner-bg.png");
+}
+header h2{
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--header-text-color);
+    text-transform: uppercase;
+    
+}
+header h3{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.row{
+    width: 80%;
+}
+
+.dropdown-toggle {
+    background-color: var(--main-color);
+    color: var(--header-text-color);
+}
+
+.dropdown-toggle:hover ,header .btn{
+    color: var(--header-text-color);
+}
+header .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 .2rem   #f2642287;
+}
+
+header form .btn, header .btn:hover , header .btn:focus{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-color: transparent;
+}
+
+header .icons a{
+    color: var(--header-text-color);
+    transition: all .5s ease-out;
+}
+header .icons a:hover{
+    color: var(--secondary-color);
+}
+
+header .offcanvas-body li{
+    padding-block: 20px;
+} 
+header .offcanvas-body a {
+    font-size:25px;
+}
+header .offcanvas   {
+    background-color: var(--main-color);
+}
+.btn-close i {
+    color: var(--header-text-color);
+    font-size: 30px;
+}.btn-close i:hover{
+    color: var(--secondary-color);
+}
+
+.row>button{
+    background-color: transparent;
+    color: var(--header-text-color);
+    
+}
+
+
+
+
+
+
+/****************************  shopping   ******************************** */
+
+h4{
+    color: var(--main-color);
+    font-size: 25px;
+    font-weight: 600;
+}
+h5{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+h5 span{
+    color: var(--secondary-color);
+}
+
+
+.shoping a{
+    font-size: 25px;
+}
+
+.shoping .crd{
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.2), 5px 6px 20px 5px rgba(0, 0, 0, 0.19);
+}
+
+.shoping .carousel-control-next,.shoping .carousel-control-prev{
+    background-color: black;
+   position: static;
+   opacity: 100%;
+ 
+}
+
+
+
+
+
+
+/**************************** spinner    ******************************** */
+
+
+.spinner-border{
+    width: 150px;
+    height: 150px;
+
+    font-size: 60px;
+    color: var(--secondary-color);
+}
+
+
+
+/****************************   footer  ******************************** */
+
+
+
+footer{
+    background-color: var(--main-color);
+    font-size: 22px;
+}
+footer .form-control{
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+.subscribe_container{
+    width: 40%;
+    border-bottom:3px solid  gray;
+}
+
+footer .form-control:focus {
+
+    box-shadow: none  ; 
+    background: none; 
+}
+
+
+
+
+
+
+
+
+/****************************  media   ******************************** */
+@media screen  and ( max-width : 700px  ){
+    nav{
+        display: none;
+    }
+
+}
