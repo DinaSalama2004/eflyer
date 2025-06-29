@@ -172,10 +172,22 @@ h5 span{
     font-size: 25px;
 }
 
-.shoping .crd{
+.shoping  .crd {
     box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.2), 5px 6px 20px 5px rgba(0, 0, 0, 0.19);
+    height: 500px;
+    position: relative;
 }
+.shoping .row1 .crd {
 
+    height: 650px;
+
+}
+.crd .d-flex{
+    position: absolute;
+    top: 100%;
+    transform: translateY(-100%);
+    width: 100%;
+}
 .shoping .carousel-control-next,.shoping .carousel-control-prev{
     background-color: black;
    position: static;
